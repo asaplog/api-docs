@@ -1,9 +1,9 @@
-# Barrar entrega
+# Barrar Entrega
 
 API para solicitar impedir que o pedido seja entregue por qualquer motivo. Recebemos 3 campos obrigatórios para localizar o pedido: numeroNf, serieNf e cnpjEmitente. É possível enviar um motivo em texto, não obrigatório, para a solicitação de barrar.
 
 | Parâmentro   | Obrigatório | Tipo   | Descrição                              |
-|--------------|-------------|--------|----------------------------------------|
+| ------------ | ----------- | ------ | -------------------------------------- |
 | numeroNF     | Sim         | String | Número da Nota Fiscal                  |
 | sérieNF      | Sim         | String | Série da Nota Fiscal                   |
 | cnpjEmitente | Sim         | String | CNPJ de quem emitiu o pedido           |
@@ -20,7 +20,9 @@ POST: https://app.asaplog.com.br/webservices/v1/webservices/v1/nfe/barrar-entreg
 Content-Type:application/json
 
 Authorization:Basic [base64 de autenticação]
+
 ### Body
+
 ```
 {
   "numeroNf": "2308198900",
@@ -39,6 +41,7 @@ Authorization:Basic [base64 de autenticação]
 Content-Type:application/json
 
 ## Body
+
 ```
 {
   "status": "SUCESSO",
@@ -56,6 +59,7 @@ Content-Type:application/json
 Content-Type:application/json
 
 ## Body
+
 ```
 {
   "errorMsgs": [
@@ -75,6 +79,7 @@ Content-Type:application/json
 Content-Type:application/json
 
 ## Body
+
 ```
 {
   "status": "ERRO",
@@ -92,6 +97,7 @@ Content-Type:application/json
 Content-Type:application/json
 
 ## Body
+
 ```
 {
   "status": "ERRO",

@@ -1,4 +1,4 @@
-# Fotos entregue
+# Fotos Entregue
 
 A API de fotos busca as fotos que o entregador parceiro tirou no momento de entrega do pedido ao consumidor final. As imagens irão vir em formato base64 no campo image64.
 
@@ -23,6 +23,7 @@ Fotos encontradas.
 Content-Type:text/plain
 
 ## Body
+
 ```
 {
   "total": 2,
@@ -52,6 +53,7 @@ Content-Type:text/plain
 Content-Type:application/json
 
 ## Body
+
 ```
 [
   "CNPJ inválido: 11111111"
