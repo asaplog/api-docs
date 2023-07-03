@@ -11,7 +11,7 @@ API para solicitar impedir que o pedido seja entregue por qualquer motivo. Receb
 
 ## Solicitar barrar entrega de pedidos
 
-POST: https://app.asaplog.com.br/webservices/v1/webservices/v1/nfe/barrar-entrega
+POST: https://app.asaplog.com.br/webservices/v1/nfe/barrar-entrega
 
 ## Request
 
