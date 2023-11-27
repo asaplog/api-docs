@@ -1,4 +1,4 @@
-# Pedidos
+# Pedidos Direto
 
 A API de Pedidos da ASAP Log serve para que você possa registrar um pedido de entrega. Você deve fazer um POST com os dados da Nota Fiscal em JSON para nosso endpoint.
 
@@ -69,7 +69,7 @@ Atenção: Pode ser enviado nenhum, um ou mais itens. Em casos de itens que são
 
 ## Registrar um Pedido
 
-POST https://app.asaplog.com.br/webservices/v1/pedidoEntregasRequest
+POST https://app.asaplog.com.br/webservices/v1/pedidoEntrega
 
 ## Headers
 
