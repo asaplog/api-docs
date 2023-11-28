@@ -69,7 +69,7 @@ Atenção: Pode ser enviado nenhum, um ou mais itens. Em casos de itens que são
 
 ## Registrar um Pedido
 
-POST https://app.asaplog.com.br/webservices/v1/pedidoEntregasRequest
+POST https://app.asaplog.com.br/webservices/v1/pedidoEntregas
 
 ## Headers
 
