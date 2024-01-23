@@ -7,7 +7,7 @@ Em todas as requisições válidas, o sistema irá retornar uma estrutura de men
 
 ## Cadastrar uma loja
 
-POST https://app.asaplog.com.br//Api/Ocorrencias/OcorrenciaNotaFiscalDePara
+POST https://app.asaplog.com.br/Api/Ocorrencias/OcorrenciaNotaFiscalDePara
 
 ## Headers
 
