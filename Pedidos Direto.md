@@ -11,7 +11,7 @@ Caso o status seja 400, você pode capturar uma lista dos erros que ocorreram no
 ## Parâmetros do Pedido de Entrega:
 
 | Parâmetro            | Obrigatório | Tipo    | Tamanho (máx. caracteres) | Descrição                                                                                        |
-|----------------------|-------------|---------|---------------------------|--------------------------------------------------------------------------------------------------|
+| -------------------- | ----------- | ------- | ------------------------- | ------------------------------------------------------------------------------------------------ |
 | numeroNf             | Sim         | String  | 20                        | Número da Nota Fiscal                                                                            |
 | serieNf              | Sim         | String  | 5                         | Série da Nota Fiscal                                                                             |
 | chaveAcesso          | Sim         | String  | 50                        | Chave de Acesso da Nota Fiscal                                                                   |
@@ -38,7 +38,7 @@ Parâmetros do Consumidor/Emitente:
 Atenção: O consumidor/emitente deve ter CPF ou CNPJ.
 
 | Parâmetro         | Obrigatório | Tipo   | Tamanho (máx. caracteres) | Descrição                                            |
-|-------------------|-------------|--------|---------------------------|------------------------------------------------------|
+| ----------------- | ----------- | ------ | ------------------------- | ---------------------------------------------------- |
 | cnpj              | Sim para PJ | String | 20                        | CNPJ do Consumidor                                   |
 | cpf               | Sim para PF | String | 20                        | CPF do Consumidor                                    |
 | nome              | Sim         | String | 200                       | Nome Completo do Consumidor                          |
@@ -58,7 +58,7 @@ Parâmetros dos Itens:
 Atenção: Pode ser enviado nenhum, um ou mais itens. Em casos de itens que são exatamente o mesmo, deve ser repassado um objeto para cada item (Ex: dois itens "TV Samsung" precisa vir dois objetos dentro de "itens").
 
 | Parâmetro    | Obrigatório | Tipo   | Tamanho (máx. caracteres) | Descrição                                       |
-|--------------|-------------|--------|---------------------------|-------------------------------------------------|
+| ------------ | ----------- | ------ | ------------------------- | ----------------------------------------------- |
 | descricao    | Não         | String | 200                       | Descrição do Item                               |
 | peso         | Não         | Double | -                         | Peso Bruto do Produto                           |
 | altura       | Não         | Double | -                         | Altura do Item (em metro, ex: 1 metro é 1.0)    |
@@ -66,10 +66,9 @@ Atenção: Pode ser enviado nenhum, um ou mais itens. Em casos de itens que são
 | profundidade | Não         | Double | -                         | Profundidade do Item (em metro, ex: 30cm é 0.3) |
 | cubagem      | Não         | Double | -                         | Cubagem do Item (em metros cúbicos, ex: 0.4501) |
 
-
 ## Registrar um Pedido
 
-POST https://app.asaplog.com.br/webservices/v1/pedidoEntrega
+POST https://app.asaplog.com.br/webservices/v1/pedidoEntregas
 
 ## Headers
 
@@ -78,6 +77,7 @@ Content-Type:application/json
 Authorization:Basic [base64 de autenticação]
 
 ## Body
+
 ```
 {
   "numeroNf": "154823",
@@ -144,6 +144,7 @@ Authorization:Basic [base64 de autenticação]
   ]
 }
 ```
+
 ## Response
 
 Pedido de Entrega cadastrado com sucesso.
@@ -155,11 +156,13 @@ Pedido de Entrega cadastrado com sucesso.
 Content-Type:application/json
 
 ## Body
+
 ```
 {
   "codigoRastreio": "1850610"
 }
 ```
+
 ## Response
 
 Campos obrigatórios ou inválidos.
@@ -171,6 +174,7 @@ Campos obrigatórios ou inválidos.
 Content-Type:application/json
 
 ## Body
+
 ```
 {
   "errorMsgs": [
@@ -183,9 +187,10 @@ Content-Type:application/json
   ]
 }
 ```
+
 ## Response
 
-Dados do usuário utilizado inválido, inativo ou 
+Dados do usuário utilizado inválido, inativo ou
 experirado.
 
 403
@@ -200,7 +205,7 @@ Content-Type:application/json
 
 ## Response
 
-Solicitações simultâneas de registrar um pedido com as 
+Solicitações simultâneas de registrar um pedido com as
 mesmas informações.
 
 409
@@ -210,6 +215,7 @@ mesmas informações.
 Content-Type:application/json
 
 ## Body
+
 ```
 {
   "errorMsgs": [
