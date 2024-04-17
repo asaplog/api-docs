@@ -1,26 +1,18 @@
 # API ASAP Log
 
-Api com payload compatível da api de pedidos UX.
+API para registrar novos pedidos.
 
-**Ambiente Staging (squad Operações)**
+**Ambiente Homologação**
 
-**POST** `https://app.tatooine.asaplog.com.br/api/v1/pedido`
-
-**Ambiente PreProd**
-
-**POST** `https://app.preprod.asaplog.com.br/api/v1/pedido`
+**POST** `https://app.tatooine.asaplog.com.br/api/v1/asaplog/pedido`
 
 **Ambiente Produção**
 
-**POST** `https://app.asaplog.com.br/api/v1/pedido`
+**POST** `https://app.asaplog.com.br/api/v1/asaplog/pedido`
 
 **Autenticação**
 
-Tipo: `Basic Auth`
-
-- Username: `<user-name>`
-
-- Password: `<pass-word>`
+Tipo: `Bearer Authentication`
 
 Content: `application/json`
 

@@ -5,12 +5,19 @@ Para que a API realize a consulta corretamente, os dados devem ser enviados conf
 Em todas as requisições válidas, o sistema irá retornar uma estrutura de mensagem de retorno em formato JSON, conforme listado nas definições abaixo.
 
 
-## Cadastrar uma loja
+**Ambiente Homologação**
 
-POST https://app.asaplog.com.br/Api/Ocorrencias/OcorrenciaNotaFiscalDePara
+**POST** `https://app.tatooine.asaplog.com.br/api/v1/asaplog/consulta/ocorrencia`
 
-## Headers
+**Ambiente Produção**
 
+**POST** `https://app.asaplog.com.br/api/v1/asaplog/consulta/ocorrencia`
+
+**Autenticação**
+
+Tipo: `Bearer Authentication`
+
+Content: `application/json`
 
 
 ## Body
