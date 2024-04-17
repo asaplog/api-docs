@@ -1,6 +1,6 @@
 # API ASAP Log
 
-Api para importação de pedidos.
+API para registrar novos pedidos.
 
 **Ambiente Homologação**
 
