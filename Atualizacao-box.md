@@ -14,7 +14,11 @@
 ### Body
 
 > box | Integer
- 
+
+ ### Responses
+
+ > 200 | Encontrou roteiro e irá processar \
+ > 404 | Roteiro não encontrado
  
 
  
