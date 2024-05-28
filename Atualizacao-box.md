@@ -31,6 +31,7 @@
  > **404** | Roteiro não encontrado
 
 
+<br>
 
 ### RESPONSE BODY SCHEMA
 
@@ -43,6 +44,7 @@
  | data | Object | Objeto de retorno   (Representado abaixo) |
 
 
+<br>
      
 #### data:
 
