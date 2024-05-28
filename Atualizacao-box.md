@@ -18,6 +18,7 @@
 
 > box | Integer
 </details>     
+<br>
 
 <br>
 
@@ -30,33 +31,36 @@
  > **404** | Roteiro não encontrado
 
 
+<br>
 
 ### RESPONSE BODY SCHEMA
 
 
 
- | Campo | TIPO | DESCRIÇÃO |
- |:---------------|:-------:|:------------------------------------------------:|
- | status | String | Status Code HTTP |
- | message | String | Mensagem de retorno |
- | data | Object | Objeto de retorno   (Representado abaixo) |
-|
-<details>     
-<summary> data | Object</summary> 
-
-#### Para o status 200 será retornado o seguinte JSON
- | Campo      |  TIPO   |                    DESCRIÇÃO                     |
- |:---------------|:-------:|:------------------------------------------------:|
- | box | String | Box enviado no request |
- | pedidosAtualizados        | List\<String>  |        Pedido que estarão no box enviado       |
- | quantidadePedidosAtualizados           | Integer |         Quantidade de pedidos que foram alterados            |
+> | Campo | TIPO | DESCRIÇÃO |
+> |:---------------|:-------:|:------------------------------------------------:|
+> | status | String | Status Code HTTP |
+> | message | String | Mensagem de retorno |
+> | data | Object | Objeto de retorno   (Representado abaixo) |
 
 
+<br>
+     
+#### data:
 
-</details>     
+> | Campo      |     TIPO      |                    DESCRIÇÃO                     |
+> |:---------------|:-------------:|:------------------------------------------------:|
+> | box |    Integer    | Box enviado no request |
+> | pedidosAtualizados        | List\<String> |        Pedido que estarão no box enviado       |
+> | quantidadePedidosAtualizados           |    Integer    |         Quantidade de pedidos que foram alterados            |
+
+
+
 
 </details>     
 <br>
+<br>
+
 <details>     
 <summary> Exemplos de retorno</summary> 
 
