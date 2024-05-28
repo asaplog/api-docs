@@ -39,20 +39,20 @@
 
 > | Campo | TIPO | DESCRIÇÃO |
 > |:---------------|:-------:|:------------------------------------------------:|
- | status | String | Status Code HTTP |
- | message | String | Mensagem de retorno |
- | data | Object | Objeto de retorno   (Representado abaixo) |
+> | status | String | Status Code HTTP |
+> | message | String | Mensagem de retorno |
+> | data | Object | Objeto de retorno   (Representado abaixo) |
 
 
 <br>
      
 #### data:
 
- >| Campo      |     TIPO      |                    DESCRIÇÃO                     |
+> | Campo      |     TIPO      |                    DESCRIÇÃO                     |
 > |:---------------|:-------------:|:------------------------------------------------:|
- | box |    Integer    | Box enviado no request |
- | pedidosAtualizados        | List\<String> |        Pedido que estarão no box enviado       |
- | quantidadePedidosAtualizados           |    Integer    |         Quantidade de pedidos que foram alterados            |
+> | box |    Integer    | Box enviado no request |
+> | pedidosAtualizados        | List\<String> |        Pedido que estarão no box enviado       |
+> | quantidadePedidosAtualizados           |    Integer    |         Quantidade de pedidos que foram alterados            |
 
 
 
