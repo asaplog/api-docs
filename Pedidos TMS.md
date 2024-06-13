@@ -29,6 +29,7 @@ Body:
    "idServico": "MINIHUB_VV",
    "numeroNf":"232399900",
    "serieNf":"001",
+   "dataEmissaoNota:"2022-07-02T03:00:00.000Z",
    "chaveAcesso":"99980999065189990194550010025153811211328157",
    "identificacaoCliente":"2323999",
    "descricaoProduto": "Descricao do produto na NFe",
