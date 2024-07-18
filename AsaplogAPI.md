@@ -4,11 +4,11 @@ API para registrar novos pedidos.
 
 **Ambiente Homologação**
 
-**POST** `https://app.tatooine.asaplog.com.br/api/v1/asaplog/pedido`
+**POST** `https://api.tatooine.asaplog.com.br/api/v1/asaplog/pedido`
 
 **Ambiente Produção**
 
-**POST** `https://app.asaplog.com.br/api/v1/asaplog/pedido`
+**POST** `https://api.asaplog.com.br/api/v1/asaplog/pedido`
 
 **Autenticação**
 
