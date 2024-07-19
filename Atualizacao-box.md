@@ -4,7 +4,7 @@
 <summary> Request </summary> 
 
 ### URL
-> **PATCH** https://api.asaplog.com.br/webservices/v2/atualizar-box/{cod_roteiro}
+> **PATCH** https://api.asaplog.com.br/api/v1/asaplog/webservices/v2/atualizar-box/{cod_roteiro}
 
 ### Path Parâmetros
 > cod_roteiro | Código do roteiro que o pedido está incluído
