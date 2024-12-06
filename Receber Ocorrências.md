@@ -76,11 +76,11 @@ Content: `application/json`
       "model": "remetente",
       "cnpj": "12345678901234",
       "servico": 4,
-      "dtOcorrencia": "2022-08-23T02:00:00.000Z",
+      "dtOcorrencia": "2024-12-03 08:30:20",
       "codigoOcorrencia": "01",
       "descricaoOcorrencia": "Entrega realizada com sucesso",
-      "nroNotaFiscal": 154823,
-      "serieNotaFiscal": 1,
+      "nroNotaFiscal": "12345678",
+      "serieNotaFiscal": "1",
       "nroPedido": "123456",
       "codigoRastreio": "1850610",
       "latitude": "-19.916681",
@@ -107,13 +107,13 @@ Content: `application/json`
 
 ## Response
 
-| Parâmetro  | Obrigatório | Tipo   | Descrição                                                                                                                                                                 |
-|------------|-------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| flagError  | Sim         | bool   | Determina se houve o registro das ocorrências.                                                                                                                            |
-| listaErros | Não         | array  | Lista de erros registrados.                                                                                                                                               |
-| info       | Sim         | string | O json contendo as informações da ocorrências enviadas com as validações realizadas (registradas nos parâmetros flagInválido e listaErros no bloco da própria ocorrência) |
+| Parâmetro  | Obrigatório | Tipo   | Descrição                                                                   |
+|------------|-------------|--------|-----------------------------------------------------------------------------|
+| flagError  | Sim         | bool   | Determina se houve o registro das ocorrências com erros ou não.             |
+| listaErros | Sim         | array  | Lista de erros registrados para cada ocorrência.                            |
+| info       | Sim         | string | O json contendo as informações das ocorrências enviadas no caso de sucesso. |
 
-## Exemplo de response:
+## Exemplo de response com sucesso em todas ocorrências:
 
 ```json
 {
@@ -138,9 +138,7 @@ Content: `application/json`
         "unidadeOcorrencia": "",
         "nomeCidade": "Su00E3o Paulo",
         "uf": "SP",
-        "listaEvidencias": [],
-        "flagInvalido": false,
-        "listaErros": []
+        "listaEvidencias": []
       },
       {
         "model": "tomador",
@@ -165,19 +163,37 @@ Content: `application/json`
           {
             "url": "http://uxdelivery.com.br/img/teste2.png"
           }
-        ],
-        "flagInvalido": false,
-        "listaErros": []
+        ]
       }
     ]
   }
 }
 ```
 
+## Exemplo de response com erro:
+
+```json
+{
+  "flagError": true,
+  "listaErros": [
+    "Ocorrência 1: Model requerido",
+    "Ocorrência 1: Cnpj requerido",
+    "Ocorrência 1: Nome da cidade requerido",
+    "Ocorrência 1: Data da ocorrência requerido",
+    "Ocorrência 1: Código da ocorrência requerido",
+    "Ocorrência 1: Série da nota fiscal requerido",
+    "Ocorrência 1: Número da nota fiscal requerido",
+    "Ocorrência 1: UF requerido",
+    "Ocorrência 1: Serviço requerido"
+  ],
+  "info": null
+}
+```
+
 ## HTTP Status Codes
 
 - 200 - Sucesso no processamento das ocorrências (Na resposta JSON em "info.listaOcorrencias" todas ocorrências
-  cadastradas e nos campos "flagInvalido" e "listaErros" indicativo de erro e seus respectivos detalhes)
+  cadastradas)
 - 400 - Os dados informados são inválidos
 - 403 - Falha na autenticação da api
 - 500 - Erro interno do sistema.
