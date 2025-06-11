@@ -158,10 +158,10 @@ Content: `application/json`
         "uf": "SP",
         "listaEvidencias": [
           {
-            "url": "http://uxdelivery.com.br/img/teste.jpg"
+            "url": "https://app.asaplog.com.br/evidencias/1850610-1.jpg"
           },
           {
-            "url": "http://uxdelivery.com.br/img/teste2.png"
+            "url": "https://app.asaplog.com.br/evidencias/1850610-2.jpg"
           }
         ]
       }
