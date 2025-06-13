@@ -32,6 +32,7 @@ Body:
    "dataEmissaoNota:"2022-07-02T03:00:00.000Z",
    "chaveAcesso":"99980999065189990194550010025153811211328157",
    "identificacaoCliente":"2323999",
+   "identificacaoClienteOnline":"1234567",
    "descricaoProduto": "Descricao do produto na NFe",
    "qtdVolumes":2,
    "pesoTotal":60.8,
