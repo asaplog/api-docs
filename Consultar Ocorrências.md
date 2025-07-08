@@ -7,7 +7,7 @@ Em todas as requisições válidas, o sistema irá retornar uma estrutura de men
 
 **Ambiente Homologação**
 
-**POST** `https://api.tatooine.asaplog.com.br/api/v1/asaplog/consulta/ocorrencia`
+**POST** `https://api-preprod.asaplog.com.br/api/v1/asaplog/consulta/ocorrencia`
 
 **Ambiente Produção**
 
