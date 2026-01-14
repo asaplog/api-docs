@@ -4,8 +4,8 @@ API para solicitar o barramento do pedido.
 ### Biblioteca dos campos
 | Campo        | Obrigatório | Tipo   | Descrição                              |
 | ---          | ---         | ---    | ---                                    |
-| numeroNF     | Sim         | String | Número da Nota Fiscal                  |
-| sérieNF      | Sim         | String | Série da Nota Fiscal                   |
+| numeroNf     | Sim         | String | Número da Nota Fiscal                  |
+| serieNf      | Sim         | String | Série da Nota Fiscal                   |
 | cnpjEmitente | Sim         | String | CNPJ de quem emitiu o pedido           |
 | motivo       | Não         | String | Motivo para solicitar barrar a entrega |
 
