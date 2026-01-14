@@ -1,5 +1,21 @@
 ## Barrar Entrega via Asaplog API
-API para solicitar o barramento do pedido.
+API para solicitar o bloqueio de entrega de um pedido.
+
+### Ambientes (Base URLs)
+
+| Ambiente | URL Base |
+| :--- | :--- |
+| **Produção** | `https://api.asaplog.com.br` |
+| **Pré-Produção** | `https://api-preprod.asaplog.com.br` |
+| **Staging (Endor)** | `https://api-endor.asaplog.com.br` |
+
+Os ambientes de Pré-Produção e Staging funcionam sob demanda. É necessário agendar a utilização junto ao time Asaplog.
+
+### Endpoint
+
+| Verbo | Endpoint |
+| :--- | :--- |
+| **POST** | `/api/v1/nfe/barrar-entrega` |
 
 ### Biblioteca dos campos
 | Campo        | Obrigatório | Tipo   | Descrição                              |
@@ -11,7 +27,7 @@ API para solicitar o barramento do pedido.
 
 ### Request
 
-POST https://api.asaplog.com.br/nfe/barrar-entrega
+POST https://api.asaplog.com.br/api/v1/nfe/barrar-entrega
 
 #### Header
     
@@ -63,6 +79,6 @@ X-ASAP-Log-API-Key: (API Key gerada)
 ```
 {
     "status": "ERRO",
-    "mensagem": "Cannot invoke ..."
+    "mensagem": "Falha ao barrar entrega"
 }
 ```
