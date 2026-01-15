@@ -2,7 +2,7 @@
 
 **Ambiente de Homologação**
 
-**POST** `https://api.preprod.asaplog.com.br/api/v1/asaplog/ocorrencia`
+**POST** `https://api-preprod.asaplog.com.br/api/v1/asaplog/ocorrencia`
 
 **Ambiente de Produção**
 
